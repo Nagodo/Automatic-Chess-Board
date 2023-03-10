@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Automatic Chess",
+    "description": "El-Teknik projekt",
+    "version": "1.0",
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://192.168.1.1/*"],
+            "html": ["index.html"],
+            "js": ["script.js", "vue.min.js"],
+            "css": ["style.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["http://192.168.1.1/*"],
+            "resources": ["index.html", "script.js", "vue.min.js", "style.css"]
+        }
+    ]
+ }
