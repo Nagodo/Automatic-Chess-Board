@@ -1,10 +1,182 @@
 
 .content {
-    height: 90vh;
-    width: 160vh;
-    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
 
     top: 50%;
     left: 50%;
 
+    transform: translate(-50%, -50%);
+}
+
+.information {
+    position: absolute;
+    width: 50vh;
+    height: 80vh;
+    top: 5vh;
+    left: 5vh;
+}
+
+#position {
+    display: none;
+}
+
+.position {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    height: 4vh;
+    border-radius: 1vh;
+}
+
+
+.position .txt {
+    color: rgb(201, 201, 201);
+    position: absolute;
+    top: -0.25vh;
+    
+    font-size: 1.4vh;
+
+    width: 100%;
+    text-align: center;
+}
+
+.board {
+    position: absolute;
+    height: 90vh;
+    width: 90vh;
+    
+    top: 50%;
+    left: 65vh;
+
+    transform: translateY(-50%);
+}
+
+.board .squares {
+    position: absolute;
+    height: 87vh;
+    width: 87vh;
+
+    top: 0vh;
+    right: 0vh;
+
+}
+
+.board .squares .square {
+    position: relative;
+    height: 10.875vh;
+    width: 10.875vh;
+
+    float: left;
+}
+
+.board .squares .square .highlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.board .squares .square .highlight:hover {
+    background-color: rgba(255, 0, 0, 0.209) !important;
+}
+
+
+.board .squares .square img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-style: none;
+    box-shadow: none;
+}
+
+.board .notation {
+    position: absolute;
+    height: 90vh;
+    width: 90vh;
+
+
+    top: 0vh;
+    right: 0vh;
+
+}
+
+.board .notation .row {
+    position: absolute;
+    height: 3vh;
+    width: 87vh;
+
+   
+    bottom: 0vh;
+    right: 0vh;
+
+    background-color: rgb(41, 41, 41);
+}
+
+.board .notation .row .letter {
+    position: relative;
+    float: left;
+  
+    width: 10.875vh;
+    height: 3vh;
+ 
+}
+
+.board .notation .row .letter p {
+    position: absolute;
+    top: -1.7vh;
+    width: 2vh;
+    height: 2vh;
+
+ 
+    line-height: 2vh;
+
+    font-size: 2.2vh;
+    text-align: center;
+    color: rgb(201, 201, 201);
+
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.board .notation .column {
+    position: absolute;
+    height: 90vh;
+    width: 3vh;
+
+    top: 0vh;
+    left: 0vh;
+    background-color: rgb(41, 41, 41);
+}
+
+.board .notation .column .number {
+    position: relative;
+    
+  
+    width: 3vh;
+    height: 10.875vh;
+ 
+}
+
+.board .notation .column .number p {
+    position: absolute;
+    
+    width: 2vh;
+    height: 2vh;
+
+    top: 2vh;
+    
+    font-size: 2.2vh;
+    text-align: center;
+    color: rgb(201, 201, 201);
+
+    left: 50%;
+    transform: translateX(-50%);
+    
 }

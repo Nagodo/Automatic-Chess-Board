@@ -10,14 +10,14 @@
         {
             "matches": ["http://192.168.1.1/*"],
             "html": ["index.html"],
-            "js": ["script.js", "vue.min.js"],
+            "js": ["script.js"],
             "css": ["style.css"]
         }
     ],
     "web_accessible_resources": [
         {
             "matches": ["http://192.168.1.1/*"],
-            "resources": ["index.html", "script.js", "vue.min.js", "style.css"]
+            "resources": ["index.html", "script.js", "style.css", "/img/*"]
         }
     ]
  }

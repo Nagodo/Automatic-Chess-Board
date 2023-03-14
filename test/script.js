@@ -1,4 +1,4 @@
-var stockfish = new Worker('stockfish.js');
+const s = new Worker('/stockfish.js');
 
 // fetch(chrome.runtime.getURL('/index.html'))
 //     .then(response => response.text())
